@@ -7,8 +7,23 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-17T16:01:18.287423+00:00'
+generated-at: '2026-10-17T18:38:09.138274+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 4
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+  udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
@@ -52,6 +67,34 @@ proxies:
     path: /ws-vmess
     headers:
       Host: vah4urdzl3jdx5r2.v.3dns.vip
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 6
+  server: funagfrdfs.alixxplay.com
+  port: 30892
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
+    short-id: 3d31326f95
+  servername: us1p1.xn--ghq880n3na965a.com
+  client-fingerprint: safari
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: funagfrdfs.alixxplay.com
+  port: 33939
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: IPg65ZC9ZkvXpBZN2GSnICYZaIyGxcj2d8Y406KXA1I
+    short-id: b20abd16cda27eeb
+  servername: www.otto.de
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 35.90.209.22
@@ -121,19 +164,6 @@ proxies:
     public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
     short-id: e51285e3
   servername: us1p1.xn--ghq880n3na965a.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 208.84.100.209
-  port: 2112
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -217,6 +247,23 @@ proxies:
       Host:
       - play.googleapis.com
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 78.159.246.179
+  port: 2053
+  type: vless
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: randomquaint.net
+    mode: auto
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: 45.12.63.219
   port: 443
@@ -243,6 +290,23 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   skip-cert-verify: false
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: randomquaint.net
+  port: 2053
+  type: vless
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: randomquaint.net
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: randomquaint.net
+    mode: auto
   udp: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 34.245.208.137
@@ -304,20 +368,29 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 3.8.150.222
+- name: 🇧🇷 巴西 | BRA
+  server: 137.131.171.249
+  port: 20000
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  auth: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
+- name: 🇸🇪 瑞典 | SWE
+  server: edge-lab-b.10media.top
   port: 443
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - play.googleapis.com
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: swedenfeed
   udp: true
 - name: 🇵🇱 波兰 | POL 3
   server: cz.pythonmakemigreat.wiki
@@ -355,28 +428,33 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
+  - 🇸🇬 新加坡 | SGP 6
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_16
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
   - 🇰🇷 韩国 | KOR 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 3
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇱🇻LV拉脱维亚丨yoyapai.com
+  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇪 爱尔兰 | IRL
   - ❓未知丨yoyapai.com_1
   - 🇵🇱 波兰 | POL
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇬🇧 英国 | GBR
+  - 🇧🇷 巴西 | BRA
+  - 🇸🇪 瑞典 | SWE
   - 🇵🇱 波兰 | POL 3
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
@@ -384,6 +462,7 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
@@ -391,11 +470,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸US美国丨yoyapai.com_16
+  - 🇸🇬 新加坡 | SGP 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -406,7 +485,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 10
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -418,6 +496,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 10
+  - 🇮🇪 爱尔兰 | IRL
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
