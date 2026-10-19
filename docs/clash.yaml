@@ -7,37 +7,10 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-19T15:45:44.329466+00:00'
+generated-at: '2026-10-19T20:47:45.957120+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP 11
-  server: 104.18.35.86
-  port: 2082
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 104.18.35.86
-  port: 2083
-  type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  tls: true
-  servername: vlsovip.1d.mom
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=unsafe
-    headers:
-      Host: vlsovip.1d.mom
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 47.76.57.83
+- name: 🇭🇰 香港 | HKG 4
+  server: 8.218.195.61
   port: 443
   type: vmess
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -45,42 +18,97 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 4c2d5151.266nets.com
-  port: 12013
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
+- name: 🇭🇰 香港 | HKG 3
+  server: 47.243.194.125
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
   udp: true
-- name: 🇭🇰 香港 | HKG 9
-  server: vless-hk.whuiy.xyz
+- name: 🇯🇵 日本 | JPN 2
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: 8.217.254.88
+  port: 443
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 13.212.217.197
   port: 443
   type: vless
-  uuid: edee8379-1a08-45c8-8401-338452d8ca9b
-  tls: true
-  servername: vless-hk.whuiy.xyz
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /xhttp-us
-    host: vless-hk.whuiy.xyz
-    mode: auto
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - play.googleapis.com
   udp: true
-- name: 🇭🇰 香港 | HKG 8
-  server: 4c2d5151.266nets.com
-  port: 12001
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 128.1.186.132
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 104.18.35.86
+  port: 8080
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 162.159.152.4
+  port: 2052
+  type: vless
+  uuid: e531609c-63f6-4b14-a422-eb346c4b29be
+  tls: false
+  encryption: mlkem768x25519plus.random.0rtt.iZJwXenO31gj30xJyjEnDZ_qxA-iUdzbT1zdrr8Mbmo
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpnosiris2.aryan-sport.ir
+    v2ray-http-upgrade: true
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com_14
   type: vless
@@ -96,19 +124,55 @@ proxies:
     short-id: 21270a66
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: cf.130519.xyz
+- name: 🇺🇸 美国 | USA 4
+  server: vless-colo.whuiy.xyz
   port: 443
   type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
   tls: true
-  servername: ccc.010304.xyz
+  servername: vless-colo.whuiy.xyz
   client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp-us
+    host: vless-colo.whuiy.xyz
+    mode: auto
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 98.98.79.198
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 162.159.152.4
+  port: 2052
+  type: vless
+  uuid: 16a74c64-15bf-4fea-89e1-0a33ca535cc9
+  tls: false
+  encryption: mlkem768x25519plus.random.0rtt.iZJwXenO31gj30xJyjEnDZ_qxA-iUdzbT1zdrr8Mbmo
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ccc.010304.xyz
+      Host: vpnosiris.aryan-sport.ir
+    v2ray-http-upgrade: true
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 44.251.76.224
+  port: 443
+  type: vless
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - play.googleapis.com
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com_1
   type: trojan
@@ -121,6 +185,35 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 100.54.27.217
+  port: 443
+  type: vless
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  tls: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - play.googleapis.com
+  udp: true
+- name: ❓未知丨yoyapai.com_61
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  servername: www.lamer.com.sg
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
+    short-id: 28f5c1f8f98a
+  skip-cert-verify: false
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_10
   type: vless
@@ -136,36 +229,19 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 198.211.123.90
+- name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  server: 152.32.167.33
   port: 443
   type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: randomquaint.net
-  port: 2053
-  type: vless
-  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: randomquaint.net
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: randomquaint.net
-    mode: auto
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
+    short-id: cff998a4
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
@@ -183,13 +259,13 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 78.159.246.179
-  port: 8443
+  port: 2053
   type: vless
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
   tls: true
   alpn:
-  - h2
   - http/1.1
+  - h2
   servername: randomquaint.net
   client-fingerprint: firefox
   network: xhttp
@@ -197,6 +273,8 @@ proxies:
     path: /api/v1/upload
     host: randomquaint.net
     mode: auto
+    x-padding-bytes: 100-1000
+    x-padding-obfs-mode: false
   udp: true
 - name: ❓未知丨yoyapai.com_46
   type: vless
@@ -210,7 +288,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   skip-cert-verify: false
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
+- name: 🇦🇺 澳大利亚 | AUS 2
   server: 158.178.137.129
   port: 20000
   type: hysteria2
@@ -221,54 +299,6 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000
-- name: 🇩🇪 德国 | DEU 6
-  server: bs.90909.club
-  port: 2096
-  type: vless
-  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless-grpc-reality
-  udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 45.145.12.148
-  port: 443
-  type: vless
-  uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
-  tls: true
-  reality-opts:
-    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
-    short-id: 35debf0dc757d053
-  servername: max.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: pl-a50baf0d7f.shamanapp.online
-  port: 443
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: pl-a50baf0d7f.shamanapp.online
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /ShamanXHTTP2026
-    host: pl-a50baf0d7f.shamanapp.online
-    mode: stream-up
-  udp: true
 - name: 🇳🇱NL荷兰丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -299,6 +329,22 @@ proxies:
       Host: free.sahanwickramasinghe.me
   skip-cert-verify: false
   udp: true
+- name: 🇫🇷 法国 | FRA
+  server: speedtest.org
+  port: 8443
+  type: vless
+  uuid: c3571d81-38bd-44a8-9b75-5af8a125fc42
+  tls: true
+  alpn:
+  - http/1.1
+  servername: pbsjv.megalionzone-vexina.sbs
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /bala
+    headers:
+      Host: pbsjv.megalionzone-vexina.sbs
+  udp: true
 - name: ❓未知丨yoyapai.com_12
   type: vless
   server: sg2-8sb.6121999.dpdns.org
@@ -327,68 +373,92 @@ proxies:
       Host: ccc.010304.xyz
   skip-cert-verify: false
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: 138.124.63.224
+  port: 8444
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: GunService
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 11
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰 香港 | HKG
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP 4
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 12
+  - ❓未知丨yoyapai.com_61
   - 🇩🇪DE德国丨yoyapai.com_10
-  - 🇳🇱 荷兰 | NLD
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
   - ❓未知丨yoyapai.com_46
-  - 🇦🇺 澳大利亚 | AUS
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
-  - 🇵🇱 波兰 | POL 2
+  - 🇦🇺 澳大利亚 | AUS 2
   - 🇳🇱NL荷兰丨yoyapai.com
   - 🇱🇰LK斯里兰卡丨yoyapai.com
+  - 🇫🇷 法国 | FRA
   - ❓未知丨yoyapai.com_12
   - ❓未知丨yoyapai.com_48
+  - 🇱🇻 拉脱维亚 | LVA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 9
-  - 🇭🇰 香港 | HKG 8
+  - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 11
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰 香港 | HKG
-  - 🇸🇬 新加坡 | SGP 6
-  - 🇭🇰 香港 | HKG 9
+  - 🇯🇵 日本 | JPN 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸US美国丨yoyapai.com_14
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 11
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰 香港 | HKG
-  - 🇸🇬 新加坡 | SGP 6
+  - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 12
+  - ❓未知丨yoyapai.com_48
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
