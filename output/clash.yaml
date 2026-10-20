@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-20T15:14:22.124799+00:00'
+generated-at: '2026-10-20T19:25:44.064179+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: 216.23.83.153
@@ -115,29 +115,8 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 212.134.252.249
-  port: 15407
-  type: vless
-  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: qO5TgVOZ6xTBvxe9_1mByF5yx4ViCuGPsDaJRvAUTBE
-    short-id: 48ebac29ede6e8f3
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: 193.151.163.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 45.86.51.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -154,6 +133,27 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 212.134.252.249
+  port: 15407
+  type: vless
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: qO5TgVOZ6xTBvxe9_1mByF5yx4ViCuGPsDaJRvAUTBE
+    short-id: 48ebac29ede6e8f3
+  servername: www.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 45.86.51.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 185.215.132.9
@@ -177,6 +177,13 @@ proxies:
       Host:
       - play.googleapis.com
   udp: true
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_10
   type: vless
   server: 169.40.42.229
@@ -190,13 +197,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: 35.182.112.77
@@ -225,35 +225,6 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   skip-cert-verify: false
   udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 | FRA 3
-  server: 15.236.57.31
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇮🇷伊朗丨yoyapai.com
-  type: vless
-  server: link.mrpgd.ir
-  port: 6008
-  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
-  network: xhttp
-  servername: cafebazaar.ir
-  tls: false
-  xhttp-opts:
-    path: /assets
-    host: cafebazaar.ir
-    mode: stream-up
-  skip-cert-verify: false
-  udp: true
 - name: 🇳🇱NL荷兰丨yoyapai.com
   type: vless
   server: dey.lnmarketplace.net
@@ -271,6 +242,19 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
+- name: 🇱🇰LK斯里兰卡丨yoyapai.com
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  udp: true
 - name: ❓未知丨yoyapai.com_12
   type: vless
   server: sg2-8sb.6121999.dpdns.org
@@ -283,6 +267,20 @@ proxies:
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
+  skip-cert-verify: false
+  udp: true
+- name: ❓未知丨yoyapai.com_48
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  network: ws
+  servername: ccc.010304.xyz
+  tls: true
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
   skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 9
@@ -309,20 +307,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: ❓未知丨yoyapai.com_48
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  servername: ccc.010304.xyz
-  tls: true
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-  skip-cert-verify: false
   udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: 51.92.25.174
@@ -351,24 +335,22 @@ proxy-groups:
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
   - 🇨🇦 加拿大 | CAN 2
-  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇮🇹 意大利 | ITA 2
+  - 🇩🇪DE德国丨yoyapai.com_10
   - 🇨🇦 加拿大 | CAN
   - ❓未知丨yoyapai.com_46
-  - 🇮🇹 意大利 | ITA
-  - 🇫🇷 法国 | FRA 3
-  - 🇮🇷伊朗丨yoyapai.com
   - 🇳🇱NL荷兰丨yoyapai.com
+  - 🇱🇰LK斯里兰卡丨yoyapai.com
   - ❓未知丨yoyapai.com_12
+  - ❓未知丨yoyapai.com_48
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
-  - ❓未知丨yoyapai.com_48
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -393,10 +375,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com_1
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -404,10 +386,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_1
-  - 🇺🇸 美国 | USA 2
-  - 🇨🇦 加拿大 | CAN 2
   - 🇺🇸 美国 | USA 15
-  - 🇨🇦 加拿大 | CAN
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 14
+  - 🇨🇦 加拿大 | CAN 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
